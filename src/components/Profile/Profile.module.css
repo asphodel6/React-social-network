@@ -1,9 +1,8 @@
-.content {
-    grid-area: c;
-    background-color: rgb(34, 38, 39);
-}
-
 .main_img {
     width: 600px;
     height: 200px;
+}
+
+.content {
+    color: greenyellow;
 }
