@@ -1,8 +1,9 @@
+.main_img {
+    width: 600px;
+    height: 200px;
+}
+
 .content {
     color: greenyellow;
     padding: 10px;
-}
-
-.posts {
-    margin-top: 10px;
 }

@@ -1,13 +1,15 @@
 import React from "react";
 import MyPosts from "./MyPosts/MyPosts";
-import s from './Profile.module.css'
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
+
 
 const Profile = () => {
-    return <div>
-        <div><img className={s.main_img} src="https://sodsolutions.com/wp-content/uploads/2022/09/NorthBridge-Bermudagrass-on-Kansas-Citys-Arrowhead-Stadium-scaled.jpg" /></div>
-        <div className={s.content}>ava + discription</div>
-        <MyPosts />
-    </div>
+    return (
+        <div>
+            <ProfileInfo />
+            <MyPosts />
+        </div>
+    )
 }
 
 export default Profile;
