@@ -21,18 +21,25 @@ let state = {
       { id: 1, message: "I am the special one", likesCount: 16 },
       { id: 2, message: "Lmao", likesCount: 148 },
     ],
+    newPostText: "musho-gracias",
   },
 };
 
-export let addPost = (postMessage) => {
-    let newPost ={
-        id: 5,
-        message: postMessage,
-        likesCount: 0
-    };
+export let addPost = () => {
+  let newPost = {
+    id: 5,
+    message: state.profilePage.newPostText,
+    likesCount: 0,
+  };
 
-    state.profilePage.posts.push(newPost);
-    rerenderEntireTree(state);
-}
+  state.profilePage.posts.push(newPost);
+  state.profilePage.newPostText = '';
+  rerenderEntireTree(state);
+};
+
+export let updateNewPostText = (newText) => {
+  state.profilePage.newPostText = newText;
+  rerenderEntireTree(state);
+};
 
 export default state;
