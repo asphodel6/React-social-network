@@ -6,3 +6,12 @@
 .content {
     color: greenyellow;
 }
+
+.selectedPage {
+    font-weight: bold;
+    color: gold;
+}
+
+.wrapper {
+    color: white;
+}
